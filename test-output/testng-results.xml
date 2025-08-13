@@ -1,21 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="9" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-13T01:03:05 IST" name="Default suite" finished-at="2025-08-13T01:03:10 IST" duration-ms="5323">
+  <suite started-at="2025-08-13T23:25:11 IST" name="Suite" finished-at="2025-08-13T23:25:12 IST" duration-ms="53">
     <groups>
+      <group name="regression">
+        <method signature="HomePage.search()[pri:2, instance:ui.HomePage@776aec5c]" name="search" class="ui.HomePage"/>
+        <method signature="HomePage.addToCart()[pri:3, instance:ui.HomePage@776aec5c]" name="addToCart" class="ui.HomePage"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="OrderPage.currentOrder()[pri:1, instance:ui.OrderPage@c730b35]" name="currentOrder" class="ui.OrderPage"/>
+        <method signature="HomePage.search()[pri:2, instance:ui.HomePage@776aec5c]" name="search" class="ui.HomePage"/>
+        <method signature="OrderPage.pastOrder()[pri:2, instance:ui.OrderPage@c730b35]" name="pastOrder" class="ui.OrderPage"/>
+        <method signature="AccountPage.removeFavourite()[pri:3, instance:ui.AccountPage@206a70ef]" name="removeFavourite" class="ui.AccountPage"/>
+        <method signature="HomePage.addToCart()[pri:3, instance:ui.HomePage@776aec5c]" name="addToCart" class="ui.HomePage"/>
+        <method signature="OrderPage.returnOrder()[pri:3, instance:ui.OrderPage@c730b35]" name="returnOrder" class="ui.OrderPage"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-08-13T01:03:05 IST" name="Default test" finished-at="2025-08-13T01:03:10 IST" duration-ms="5323">
-      <class name="testng01.LandingPage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testng01.LandingPage@1a677343]" started-at="2025-08-13T01:03:05 IST" name="setup" finished-at="2025-08-13T01:03:10 IST" duration-ms="5272" status="PASS">
+    <test started-at="2025-08-13T23:25:11 IST" name="Test" finished-at="2025-08-13T23:25:12 IST" duration-ms="53">
+      <class name="ui.HomePage">
+        <test-method signature="search()[pri:2, instance:ui.HomePage@776aec5c]" started-at="2025-08-13T23:25:12 IST" name="search" finished-at="2025-08-13T23:25:12 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="homePage()[pri:0, instance:testng01.LandingPage@1a677343]" started-at="2025-08-13T01:03:10 IST" name="homePage" finished-at="2025-08-13T01:03:10 IST" duration-ms="27" status="PASS">
+        </test-method> <!-- search -->
+        <test-method signature="addToCart()[pri:3, instance:ui.HomePage@776aec5c]" started-at="2025-08-13T23:25:12 IST" name="addToCart" finished-at="2025-08-13T23:25:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePage -->
-      </class> <!-- testng01.LandingPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- addToCart -->
+      </class> <!-- ui.HomePage -->
+      <class name="ui.OrderPage">
+        <test-method signature="currentOrder()[pri:1, instance:ui.OrderPage@c730b35]" started-at="2025-08-13T23:25:12 IST" name="currentOrder" finished-at="2025-08-13T23:25:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currentOrder -->
+        <test-method signature="pastOrder()[pri:2, instance:ui.OrderPage@c730b35]" started-at="2025-08-13T23:25:12 IST" name="pastOrder" finished-at="2025-08-13T23:25:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pastOrder -->
+        <test-method signature="returnOrder()[pri:3, instance:ui.OrderPage@c730b35]" started-at="2025-08-13T23:25:12 IST" name="returnOrder" finished-at="2025-08-13T23:25:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- returnOrder -->
+      </class> <!-- ui.OrderPage -->
+      <class name="ui.AccountPage">
+        <test-method signature="removeFavourite()[pri:3, instance:ui.AccountPage@206a70ef]" started-at="2025-08-13T23:25:12 IST" name="removeFavourite" finished-at="2025-08-13T23:25:12 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeFavourite -->
+      </class> <!-- ui.AccountPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
