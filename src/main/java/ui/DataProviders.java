@@ -13,4 +13,9 @@ public class DataProviders {
 		System.out.println(name + " " + pass + " " + email);
 	}
 
+	@Test(dataProvider = "accountCreds", dataProviderClass = CentralizedData.class)
+	public void Test3(String cardNumber, String cvv) {
+		System.out.println(cardNumber + " " + cvv);
+	}
+
 }

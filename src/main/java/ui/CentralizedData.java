@@ -32,4 +32,18 @@ public class CentralizedData {
 
 	}
 
+	@DataProvider(name = "accountCreds")
+	public Object[][] accountData(Method m) {
+
+		Object[][] atmNum = null;
+
+		if (m.getName().equals("Test3")) {
+			atmNum = new Object[][] { { "123456789", "123" }, { "987654321", "321" } };
+
+		}
+
+		return atmNum;
+
+	}
+
 }
