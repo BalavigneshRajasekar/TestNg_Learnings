@@ -3,6 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="regression.Listeners"/>
+    <listener class-name="regression.ChangeAnnotation"/>
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="Chrome"/>

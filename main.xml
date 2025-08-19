@@ -3,6 +3,7 @@
 <suite name="Suite">
 <listeners>
 <listener class-name="regression.Listeners"></listener>
+<listener class-name="regression.ChangeAnnotation"></listener>
 </listeners>
   <test  name="Test">
   <parameter name="browser" value="Chrome"></parameter>

@@ -14,6 +14,7 @@ public class RetryTest implements IRetryAnalyzer {
 		// TODO Auto-generated method stub
 
 		if (count < totalCount) {
+			System.out.println(count);
 			count++;
 			return true;
 
