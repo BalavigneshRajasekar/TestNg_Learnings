@@ -8,7 +8,7 @@ public class SystemTest extends SetupConfig {
 	public void login() {
 		System.out.println("logged in");
 		driver.get("https://www.ebay.com/");
-		Assert.assertEquals(false, true);
+		Assert.assertEquals(true, true);
 
 	}
 

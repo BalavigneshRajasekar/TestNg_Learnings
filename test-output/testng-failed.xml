@@ -9,6 +9,7 @@
     <classes>
       <class name="regression.SystemTest">
         <methods>
+          <include name="setup"/>
           <include name="login"/>
         </methods>
       </class> <!-- regression.SystemTest -->
